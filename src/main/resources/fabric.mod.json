@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "id": "antirubberbanding",
+  "version": "1.0",
+  "name": "Anti Rubberbanding",
+  "description": "Makes rubberrbanding a bit less apparent.",
   "authors": [
-    "Me!"
+    "GiantLuigi4"
   ],
+  "environment": "client",
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/GiantLuigi4/AntiRubberbanding"
   },
 
   "license": "CC0-1.0",
@@ -19,17 +19,17 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.tfc.antirubberband.Mod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "antirubberband.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.4.0",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.15.x"
   },
   "suggests": {
     "flamingo": "*"
